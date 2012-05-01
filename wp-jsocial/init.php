@@ -12,7 +12,7 @@ License: MIT
 // style name, path, dependencies, version
 wp_enqueue_style(
   "style",
-  WP_PLUGIN_URL."/Script/style.css",
+  WP_PLUGIN_URL."/wp-jsocial/Script/style.css",
   false,
   "1.0"
 );
@@ -20,7 +20,7 @@ wp_enqueue_style(
 // script name, path, dependencies, version, placement(0=header, 1=footer)
 wp_enqueue_script(
   'jsocial',
-  WP_PLUGIN_URL.'/Script/jsocial.js',
+  WP_PLUGIN_URL.'/wp-jsocial/Script/jsocial.js',
   array('jquery'),
   '1.0',
   1
