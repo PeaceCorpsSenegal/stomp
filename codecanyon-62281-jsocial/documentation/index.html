@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>jSocial	 Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/css/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/css/blueprint/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link type="text/css" rel="stylesheet" href="assets/css/SyntaxHighlighter.css"></link>
+	<script language="javascript" src="assets/js/shCore.js"></script>
+	<script language="javascript" src="assets/js/shBrushSql.js"></script>
+	<script language="javascript" src="assets/js/shBrushXml.js"></script>
+	<script language="javascript" src="assets/js/shBrushPhp.js"></script>
+	<script language="javascript" src="assets/js/shBrushjScript.js"></script>
+	<script language="javascript" src="assets/js/shBrushCss.js"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">jSocial	 Documentation by Sitebase v2.0.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">jSocial	</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 6-10-2011<br>
+					By: Sitebase (Wim Mostmans)<br>
+					Email: <a href="mailto:wim@sitebase.be">wim@sitebase.be</a>
+					</strong>
+				</p>
+				<p class="prepend-top">Informations about Updates and New Scripts are always  announced on <a href="http://twitter.com/Sitebase">Twitter</a>, <a href="http://www.facebook.com/pages/Sitebase/127478967277704">Facebook</a> and <a href="http://www.linkedin.com/in/sitebase">LinkedIn</a>.</p>
+		  </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+            
+            <p class="prepend-top append-0">
+            	<img src="assets/images/wim.jpg" alt="Wim Mostmans" align="right" class="avatar" width="80" height="80"/>
+				Thank you for purchasing my script. If you have any questions that are  beyond the scope of this help file, please feel free to email via my  user page contact form <a href="http://codecanyon.net/user/sitebase">here</a> or on <a href="http://twitter.com/Sitebase" target="_blank">Twitter</a>. Thanks so much!</p>
+				<p class="prepend-top append-0"><strong><a href="http://codecanyon.net/user/Sitebase">Sitebase</a></strong></p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+	
+<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#a">Description</a></li>
+			<li><a href="#b">How to install</a></li>
+			<li><a href="#label">Parameters</a></li>
+            <li><a href="#addyourown">Add your own websites</a></li>
+            <li><a href="#mail">Mail</a></li>
+            <li><a href="#newshare">New share icons</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#updates">Updates and New releases</a></li>
+            <li><a href="#support">Support notes</a></li>
+            <li><a href="#portfolio">Other Scripts</a></li>
+		</ol>
+		
+<hr>
+		
+		<h3 id="a"><strong>Description</strong><a href="#toc">top</a></h3>
+		<p>With jSocial you can easily place social share buttons under your articles and pages on your website. This script uses the jQuery framework and works completely client side.</p>
+		<p><strong>Supported networks</strong></p>
+        
+        <ul>
+          <li>digg</li>
+          <li>sphere</li>
+          <li>linkedin</li>
+          <li>mister wong</li>
+          <li>technorati</li>
+          <li>delicious</li>
+          <li>furl</li>
+          <li>netscape</li>
+          <li>yahoo</li>
+          <li>nujij</li>
+          <li>ekudos</li>
+          <li>google</li>
+          <li>newsvine</li>
+          <li>reddit</li>
+          <li>blogmarks</li>
+          <li>magnolia</li>
+          <li>live</li>
+          <li>tailrank</li>
+          <li>facebook</li>
+          <li>twitter</li>
+          <li>stumbleupon</li>
+          <li>bligg</li>
+          <li>symbaloo</li>
+          <li>buzz</li>
+          <li>myspace</li>
+          <li>mail </li>
+      </ul>
+        <p><strong>Modern share button</strong></p>
+        <ul>
+          <li>twitter_(horizontal, vertical, none)</li>
+          <li>facebook_(horizontal, vertical)</li>
+          <li>googleplus_(horizontal, vertical, horizontalsmall, horizontalmedium)</li>
+          <li>linkedin_(horizontal, vertical, none)</li>
+        </ul>
+      <hr />
+<h3 id="b"><strong>How to install</strong> <a href="#toc">top</a></h3>
+      <p>First of all extract all files. Upload the Script/jsocial.js file to your server and include it together with jQuery in your webpage head tag.</p>
+      
+      <pre name="code" class="html">&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;jsocial.js&quot;&gt;&lt;/script&gt;</pre>
+      
+      
+      <p>This step is only needed if you want to use the share buttons without an underscore in the name (ex: facebook, twitter, ...). Upload the images folder that you find under the Script directory. </p>
+      <p>On the place you want to show the buttons you put this code:</p>
+      
+      <pre name="code" class="html">&lt;div id=&quot;socialbuttons&quot;&gt;&lt;/div&gt;</pre>
+      
+      <p>Now you call the plugin on the html element in wich you want to show the social share buttons. This code you place in the head tag of your page.</p>
+      
+      <pre name="code" class="js">&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function($) {
+$(&quot;#socialbuttons&quot;).jsocial({
+highlight: true, 
+buttons: &quot;technorati,delicious,reddit,facebook,twitter,stumbleupon&quot;, 
+icon_format: 'images/big/%s.png',
+blanktarget: true
+});
+}); &lt;/script&gt;</pre>
+      
+      <p>Each social share button gets a CSS class .jsocial_button so you can change the margins between the buttons in your css stylesheet.</p>
+      
+      <pre name="code" class="css">.jsocial_button {
+margin-right: 5px;
+}</pre>
+      
+<hr>
+        <h3 id="label"><strong>Parameters </strong> <a href="#toc">top</a></h3>
+        <ul>
+          <li><strong> buttons:</strong> This is a comma sepperated list of the button you want to show (make sure you don't have whitespaces in this list)</li>
+          <li><strong>blanktarget:</strong> If true the link will be opened in a new window/tab.</li>
+          <li><strong>highlight:</strong> If true the icons will get an effect when hover.</li>
+          <li><strong>icon_format: </strong>The path where the script can find the images and the icons extensions. The %s in the string will be replace with the name of the social network. For example if you set this path &quot;<span class="js">images/big/%s.png</span>&quot; and for facebook the script will look for a facebook.png image in the images directory.</li>
+          <li><strong>icon_hover_format:</strong> This is the same as the icon_format (for example &quot;<span class="js">images/big/%s_hover.png</span>&quot;). Only this path format will be used when an icon is in the hover state. If you don't want to use this the leave this setting out.</li>
+          <li><strong>shorturl:</strong> Set this to true if you want to use shorturls in the share links were needed. For example these are used in the twitter share link. If you set this to false, the twitter share button will use the long url.</li>
+      </ul>
+<hr />
+
+<h3 id="addyourown"><strong>Add your own websites </strong> <a href="#toc">top</a></h3>
+       
+       <p>It's very easy to add custom websites to the jsocial script. To do this you open the Script/jsocial.js file and scroll to the bottom of the file. There you'll find lines like this:</p>
+      
+      <pre name="code" class="css">... 
+jformat['nujij']	= &quot;http://nujij.nl/ jij.lynkx?t={TITLE}&amp;u={URL}&amp;b={DESCRIPTION}&quot;; 
+jformat['ekudos']	= &quot;http://www.ekudos.nl/artikel/ nieuw?url={URL}&amp;title={TITLE}&amp;desc={DESCRIPTION}&quot;; 
+jformat['digg']	= &quot;http://digg.com/ submit?phase=2&amp;url={URL}&amp;title={TITLE}&quot;;
+...</pre>
+
+<p>As you can see it's very easy to add websites to the list. You can use the following variables in the url:</p>
+<ul>
+  <li><strong>{TITLE}:</strong> The title of the page</li>
+  <li><strong>{URL}:</strong> The url of the page</li>
+  <li><strong>{SHORTURL}:</strong> Tinyurl if the parameter shorturl is used, otherwise it returns the<br>
+    regular url</li>
+  <li><strong>{DESCRIPTION}:</strong> Page description</li>
+  <li><strong>{KEYWORDS}:</strong> Page keywords</li>
+  </ul>
+<p>To add a website you just add a line to the end of this list like this:</p>
+<pre name="code" class="css">jformat['misterwong']	= &quot;http://www.mister-wong.com/add_url/ ?bm_url={URL}&amp;bm_title={TITLE}&amp;bm_comment=&amp;bm_tags={KEYWORDS}&quot;;
+jformat['buzz']	= &quot;http://www.google.com/reader/ link?url={URL}&amp;title={TITLE}&amp;snippet={DESCRIPTION}&amp;srcURL={URL}&amp;srcTitle={TITLE}&quot;; 
+jformat['myspace']	= &quot;http://www.myspace.com/Modules/PostTo/Pages/?u={URL}&quot;;
+jformat['customsite']	= &quot;http://customsite.be/ share?url={URL}&amp;title={TITLE}&amp;description={DESCRIPTION}&quot;;</pre>
+
+<hr />
+        
+        <h3 id="mail"><strong>Mail</strong> <a href="#toc">top</a></h3>
+
+<p>In the new version you can now also use the mail tag to add a mail link. You can easily edit the data that is used for the mailto by opening the jsocial.js file and scrolling to the bottom. There you can find something like this:</p>
+      
+      <pre name="code" class="css">jformat['mail'] = &quot;mailto:to@email.com?SUBJECT={TITLE}&amp;BODY={DESCRIPTION}-{URL}&quot;;</pre>
+       
+       
+<hr />
+
+      <h3 id="newshare"><strong>New share icons</strong> <a href="#toc">top</a></h3>
+
+<p>A much requested feature was the implementation of the new share buttons for twitter, facebook, linkedin and G+. Using these is easier then ever.</p>
+      
+      <pre name="code" class="javascript">&lt;script type=&quot;text/javascript&quot;&gt;<br>jQuery(document).ready(function($) { 
+$(&quot;#example1&quot;).jsocial({
+	highlight: false,
+	buttons: &quot;twitter_horizontal,facebook_horizontal,googleplus_horizontalmedium,linkedin_horizontal&quot;
+      	});
+});
+&lt;/script&gt;</pre>
+      
+      <p>Below you find a list of different share buttons you can use for each website: </p>
+      <ul>
+        <li><strong>Twitter:</strong> twitter_horizontal,  twitter_vertical,  twitter_none</li>
+        <li><strong>Facebook:</strong> facebook_horizontal,  facebook_vertical</li>
+        <li><strong>Google+:</strong> googleplus(horizontal, googleplus_vertical, googleplus_horizontalsmall, googleplus_horizontalmedium</li>
+        <li><strong>LinkedIn:</strong> linkedin_horizontal, linkedin_vertical, none</li>
+      </ul>
+    <hr />
+        
+        <h3 id="changelog"><strong>Changelog</strong> <a href="#toc">top</a></h3>
+      	<pre class="changelog">
+2.0.0 (10/06/2011)
+* Added the new share buttons for facebook, twitter, linkedin and google+
+* Updated documentation
+        
+1.5.3 (07/20/2011)
+* Updated documentation
+
+1.5.2 (06/23/2011)
+* Fixed share url & encode
+
+1.5 (07/18/2010)
+* Added email sharing button
+
+1.4 (05/02/2010)
+* Added Myspace (you can use it with the tag "myspace")
+* Use of tinyurl is now possible
+* Updated the documentation file
+
+1.3 (04/05/2010)
+* Google Buzz added (you can use it with the tag "buzz")
+* Is now compatible with latest jquery versions
+
+1.2 (02/23/2010)
+* Fixed tooltip problem
+* Added file with links to extra social network icons
+* Fixed problem with special characters
+* Added mister wong social network
+
+1.1 (11/08/2009)
+* Fixed opacity problem in Safari and Chrome
+        
+v1.0 (03/13/2011)
+* Initial version released</pre>
+      
+      <hr />
+        
+      <h3 id="faq"><strong>FAQ</strong> <a href="#toc">top</a></h3>
+      	<h4><strong>Question 1</strong></h4>
+    	<p>Description 2</p>
+      
+      <hr />
+      
+      <h3 id="updates"><strong>Updates and New releases</strong> <a href="#toc">top</a></h3>
+    	<p>Updates and new release of the script are free to download once you have bought this item. To download a new version you go to My Account on Codecanyon and </p>
+        
+        <figure>
+        <img src="assets/images/download-update.jpg" alt="How to download an update" />
+        <figcaption>Follow these steps to download the latest release</figcaption>
+        </figure>
+        
+        <hr />
+      
+      <h3 id="support"><strong>Support notes</strong> <a href="#toc">top</a></h3>
+      <p>Right now I'm simply getting more emails and requests for support than I can manage in a timely manner. Some times I can answer emails the same day, but often it'll take me as long as a month (or longer!) to completely empty my inbox. </p>
+    	<p>Before sending a support request make sure that you have done the following things:</p>
+    	<ol>
+    	  <li>Read the full documentation file</li>
+    	  <li>See if your answser isn't already answered in the FAQ section of the script on Codecanyon.</li>
+  	  </ol>
+    	<p>To be able to help solve a problem quickly, please read the entries below. I'll do my best to assist you. I provide a full range of Support except:</p>
+      <ol>
+   	      <li>I don't (and can't) support the 3rd-party code (i.e. external plugins, javascripts, flash players, etc.) In such cases you shall have to contact the authors.</li>
+   	      <li>I don't support errors provoked by the strong modification of the original packages.</li>
+   	      <li>I do customization but this isn't included in the price of the script. To get a cost estimate for a modification you can email me on <a href="mailto:wim@sitebase.be">wim@sitebase.be</a>.</li>
+   	      <li>If you sure that your improvement ideas will be helpful to others, please don't hesitate to share it with me. Most likely that it will became a free package update.</li>
+   	      <li>If you have a more general question relating to the script on Codecanyon, you might consider visiting the <a href="http://codecanyon.net/forums/topic/codecanyon/codecanyon">forums</a> and asking your question in the <a href="http://codecanyon.net/forums/topic/item-discussion/66">"Item Discussion" section</a>.</li>
+      </ol>
+      
+      <hr />
+      
+      <h3 id="portfolio"><strong>Other scripts</strong> <a href="#toc">top</a></h3>
+    	<p>I have released a lot of other cool and handy scripts, so make sure to checkout our other scripts. To get an overview you can take a look at our <a href="http://codecanyon.net/user/Sitebase/portfolio">portfolio on Codecanyon</a>.</p>
+      
+   	  <hr />
+      
+<p>Once again, thank you so much for purchasing this script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme/script. No guarantees, but I'll do my best to assist. </p> 
+		
+		<p class="append-bottom alt large"><strong>Sitebase</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+	<script language="javascript">
+		dp.SyntaxHighlighter.ClipboardSwf = 'assets/flash/clipboard.swf';
+		dp.SyntaxHighlighter.HighlightAll('code');
+	</script>
+</body>
+</html>
