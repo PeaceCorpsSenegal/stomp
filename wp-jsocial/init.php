@@ -14,7 +14,7 @@ wp_enqueue_style(
   WP_PLUGIN_URL."/Script/style.css",
   false,
   "1.0"
-)
+);
 
 wp_enqueue_script(
   'jsocial',
@@ -22,7 +22,7 @@ wp_enqueue_script(
   array('jquery'),
   '1.0',
   1
-)
+);
 
 
 ?>
